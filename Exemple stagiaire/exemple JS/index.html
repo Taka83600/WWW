@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><Exercice JS></title>
+  </head>
+  <script>
+    console.log("hello world");
+  </script>
+  <!-- affiche "hello world" dans la console du navigateur web-->
+  <script>
+    let nombre = 10;
+    nombre = 5;
+    console.log(nombre); // Affiche 10
+  </script>
+  <script>
+    const PI = 3.14;
+    let radius = 5;
+
+    let perimeter = 2 * PI * radius;
+    console.log(
+      "Le périmètre du cercle rayon " + radius + " est égal à " + perimeter
+    );
+  </script>
+
+  <script>
+    function printHelloWorld() {
+      console.log("Hello, World!");
+    }
+    printHelloWorld(); // Appelle la fonction pour afficher "Hello, World!"
+
+    function getHelloWorld() {
+      return "3";
+    }
+
+    const helloWorld = "je ne suis pas une fonction";
+    console.log(helloWorld); // Affiche "Hello, World!" dans la console
+  </script>
+  <script>
+    function add(a, b) {
+      return a + b;
+    }
+
+    console.log(add(12, 56)); // Affiche 68
+  </script>
+
+  <script>
+    const sub = function (a, b) {
+      return a - b;
+    };
+
+    let mult = function (a, b) {
+      return a * b;
+    };
+
+    const factorielle = function fac(n) {
+      if (n <= 2) {
+        return 1;
+      } else {
+        return n * fac(n - 1);
+      }
+    };
+
+    console.log(sub(15, 26)); // Affiche 41
+    console.log(mult(15, 53)); // Affiche 795
+    console.log(factorielle(3)); // Affiche 6
+  </script>
+
+  <script>
+    function categoryAthetism(age) {
+      if (age <= 6) {
+        category = "Baby Athlé";
+      } else if (age <= 9) {
+        category = "Ecole d'athlétisme";
+      } else if (age <= 11) {
+        category = "Poussin";
+      } else if (age <= 13) {
+        category = "Benjamin";
+      } else if (age <= 15) {
+        category = "Minime";
+      } else if (age <= 17) {
+        category = "Cadet";
+      } else if (age <= 19) {
+        category = "Junior";
+      } else if (age <= 22) {
+        category = "Espoir";
+      } else {
+        category = "Autre";
+      }
+
+      return category;
+    }
+    console.log(categoryAthetism(15)); // Affiche "Baby Athlé"
+  </script>
+
+  <script>
+    const n = 10;
+    for (let i = 0; i < n; i++) {
+      console.log("index=", i);
+    }
+  </script>
+
+  <script>
+    const m = 10;
+    let i = 0;
+
+    while (i < m) {
+      console.log("index=", i);
+      i++;
+    }
+  </script>
+
+  <script>
+    function sumToN(max) {
+      return (max * (max + 1)) / 2;
+    }
+
+    const l = 10;
+
+    for (let i = 0; i < l; i++) {
+      console.log("sumToN(" + i + ")=" + sumToN(i));
+    }
+  </script>
+
+  <script>
+    // Fonction qui renvoie un nombre entier aleatoire
+    function getRandomInt(max) {
+      // recherche aleatoire d'un intégueur
+      return Math.floor(Math.random() * Math.floor(max)); // Renvoie un nombre entier aleatoire entre 0 (inclus) et max (exclus)
+    }
+
+    function playOneArmBandit(monney) {
+      const initialAmount = monney;
+      let amountMoneyPlayed = 0;
+      let amountWin = 0;
+
+      while (monney > 0) {
+        monney--;
+        amountMoneyPlayed++;
+        if (Math.random() > 0.95) {
+          const gain = 1 + getRandomInt(10);
+          amountWin += gain;
+          monney += gain;
+        }
+      }
+
+      return (
+        "You start with " +
+        initialAmount +
+        "euros\n" +
+        "You win" +
+        amountWin +
+        "euros\n" +
+        "You spent" +
+        amountMoneyPlayed +
+        "euros\n"
+      );
+    }
+    console.log(playOneArmBandit(100));
+  </script>
+
+  <script>
+    function sumToN(max) {
+      return (l * (l + 1)) / 2;
+    }
+
+    const first = 10;
+
+    for (let i = 0; i < l; i++) {
+      console.log("sumToN(" + i + ")=" + sumToN(i));
+    }
+  </script>
+
+  <script>
+    // Fonction qui renvoie un nombre entier aleatoire
+    function getRandomInt(max) {
+      // recherche aleatoire d'un intégueur
+      return Math.floor(Math.random() * Math.floor(max)); // Renvoie un nombre entier aleatoire entre 0 (inclus) et max (exclus)
+    }
+
+    function playOneArmBandit(monney) {
+      const initialAmount = monney;
+      let amountMoneyPlayed = 0;
+      let amountWin = 0;
+      let gains = [];
+
+      while (monney > 0) {
+        monney--;
+        amountMoneyPlayed++;
+        if (Math.random() > 0.95) {
+          const gain = 1 + getRandomInt(10);
+          amountWin += gain;
+          monney += gain;
+          gains.push(gain);
+        }
+      }
+
+      console.log("gains:" + gains);
+
+      return (
+        "You start with " +
+        initialAmount +
+        "euros\n" +
+        "You win" +
+        amountWin +
+        "euros\n" +
+        "You spent" +
+        amountMoneyPlayed +
+        "euros\n"
+      );
+    }
+    console.log(playOneArmBandit(100));
+  </script>
+  <script>
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * Math.floor(max));
+    }
+
+    function playOneArmBandit(monney) {
+      let amountMonneyPlayed = 0;
+      let amountWin = 0;
+      let gains = [];
+      let all_informations = {};
+
+      all_informations.initialAmount = monney;
+      while (monney > 0) {
+        monney--;
+        amountMonneyPlayed++;
+        if (Math.random() > 0.95) {
+          const gain = 1 + getRandomInt(10);
+          amountWin += gain;
+          monney += gain;
+          gains.push(gain);
+        }
+      }
+
+      all_informations.gains = gains;
+      all_informations.amountWin = amountWin;
+      all_informations.amountMonneyPlayed = amountMonneyPlayed;
+
+      return all_informations;
+    }
+    console.log(playOneArmBandit(100));
+  </script>
+
+  <body>
+    <header></header>
+  </body>
+</html>

@@ -1,0 +1,194 @@
+nav{
+    background-color: #7b1e1e;
+    padding: 10px 020;
+    border-radius: 5px; 
+    margin-bottom: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+*
+nav ul {
+    height: 2.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px; /* Permet aux éléments de passer à la ligne si nécessaire */
+}
+**/
+
+
+nav li {
+    display: inline;
+    position: relative;
+    text-align: center;
+    font-style: italic; 
+    font: sans-serif;
+    height: 20px;
+    padding: top 2px;
+    margin-left: 40px;
+    width: 50px;
+    height: 50px;
+    background-color:rgb(145, 11, 11);
+    border-radius: 5px;
+}
+nav a {
+    color: white;
+    text-decoration: solid;
+    height: 80px;
+    padding-bottom: 0.4rem;
+    padding-left: 0.5rem;
+    text-align: center;
+    padding-right: 0.5rem;
+    background-color: #a22e2e;
+    border-radius: 4px; /* Coins arrondis pour les liens */
+    transition: background-color 0.3s ease;
+
+}
+nav a:hover {
+    background-color: #963737;
+    color: white; /* Couleur du texte au survol */
+}
+
+
+body {
+    font-family: 'Segoe UI', 'Georgia', serif;
+    background-color: #faf6f3;
+    background-image: url(https://www.transparenttextures.com/patterns/cubes.png);
+    background-repeat: repeat;
+    color: #2f2f2f;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 25px;
+    line-height: 1.7;
+}
+
+/* ===== Titres ===== */
+h1 {
+    color: #7b1e1e;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    border: 2px solid black; /* Bordure noire de 2 pixels */
+    padding: 10px; /* Espace intérieur pour la bordure */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Ombre pour un effet de profondeur */
+}
+
+p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #4e4e4e;
+    border: 2px solid black; /* Bordure noire de 2 pixels */
+    padding: 10px; /* Espace intérieur pour la bordure */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Ombre pour un effet de profondeur */
+}
+
+h2 {
+    color: #7b1e1e;
+    font-size: 1.6rem;
+    border-left: 4px solid #7b1e1e;
+    padding-left: 12px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-top: 25px;
+    color: #963737;
+    font-style: italic;
+}
+
+/* ===== Infos pratiques ===== */
+.contact, .langues {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #5c5c5c;
+}
+
+.contact br, .langues br {
+    display: none;
+}
+
+/* ===== Listes ===== */
+ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+
+/* ===== Intérêts avec icônes stylisées (optionnel) ===== */
+.interets li::before {
+    content: " ";
+    color: #a02e2e;
+    font-weight: bold;
+}
+.galerie {
+        border: 3px solid #7b1e1e; /* Bordure rouge de 3 pixels */
+        border-radius: 10px; 
+        padding: 20px;
+        background-color: #7b1e1e;/* Coins arrondis */
+        box-shadow: 0 4px 12px rgba(151, 39, 39, 0.2); /* Ombre pour un effet de profondeur */
+        margin-top: 20px; /* Espace entre les images */
+        max-width: 100%; /* Images responsive */
+        height:auto ;
+        display: block;
+}
+.galerie img {
+        width: 100%; /* Images responsive */
+        height: auto; /* Maintien du ratio d'aspect */
+        border-radius: 15px; /* Coins arrondis pour les images */
+        margin-bottom: 15px; 
+    }
+
+
+
+/* ===== Responsive Design ===== */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 25px 15px;
+        font-size: 0.95rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .contact, .langues {
+        font-size: 0.95rem;
+    }
+.galerie {
+        border: 3px solid #7b1e1e; /* Bordure rouge de 3 pixels */
+        border-radius: 10px; 
+        padding: 20px;
+        background-color: #7b1e1e;/* Coins arrondis */
+        box-shadow: 0 4px 12px rgba(151, 39, 39, 0.2); /* Ombre pour un effet de profondeur */
+        margin-top: 20px; /* Espace entre les images */
+        max-width: 100%; /* Images responsive */
+        height:auto ;
+        display: block;
+}
+.galerie img {
+        width: 100%; /* Images responsive */
+        height: auto; /* Maintien du ratio d'aspect */
+        border-radius: 15px; /* Coins arrondis pour les images */
+        margin-bottom: 15px; 
+    }
+}

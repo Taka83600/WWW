@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Formulaire pour s'exprimé sur les troubles Dys">
+    <meta name="author" content="Tom & Aymen">
+    <meta name="copyright" content="Tom & Aymen">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="shortcut icon" href="./images/./favicon.ico" type="image/x-icon">
+
+    <title>Formulaire - Les troubles Dys</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html" id="lien1" aria-label="Lien pour la page accueil (page actuelle)">🏠 | Accueil</a></li>
+            <li><a href="#" id="lien2" aria-label="Lien pour accéder aux témoignages">🎤 | Témoignages</a></li>
+            <li><a href="#" id="lien3" aria-label="Lien pour accéder à l’article">📰 | Article</a></li>
+            <li><a href="#" id="lien4" aria-label="Lien pour accéder à la galerie d'images">🖨️ | Galerie</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1 class="titledys">💬 Exprime-toi sur les troubles Dys</h1>
+    </header>
+
+    <form class="formulaire" action="#" method="post" aria-label="Formulaire pour partagé son expérience ou question">
+        <br>
+        <label for="email" id="labelemail">📧 Ton email : </label>
+        <br>
+        <input type="email" name="email" id="emailinput" aria-label="Champs pour renseigné son email" required>
+
+        <br>
+        <br>
+
+        <label for="troubles" id="troubleslab">🧠 Troubles concerné :</label><br>
+
+        <select name="troubles" id="troubles">
+            <optgroup aria-label="Selection de boutton" label="Type de troubles"></optgroup>
+            <option aria-label="Première option la dyslexie" value="Dyslexie">Dyslexie</option>
+            <option aria-label="Deuxième option la dysphasie" value="Dysphasie">Dysphasie</option>
+            <option aria-label="Troisième option la dyspraxie" value="Dyspraxie">Dyspraxie</option>
+            <option aria-label="Quatrième option la dyscalculie" value="Dyscalculie">Dyscalculie</option>
+            <option aria-label="Cinquième option la Dysorthographie" value="Dysorthographie">Dysorthographie</option>
+        </select>
+        
+        <br>
+        <br>
+
+        <label for="textarea">💬 Ton message :</label>
+        <br>
+
+        <textarea name="textarea" id="textarea" area-label="Champs pour renseigné son expérience ou ses question" placeholder="Ton message"></textarea>
+
+        <br>
+        <br>
+
+        <input id="submitbtn" aria-label="Boutton pour envoyé le formulaire !" type="submit" value="Envoyer">
+
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+.header {
+    background-color:grey;
+    padding: 20px;
+    height: auto;
+    color: aliceblue;
+}
+
+.header img {
+    width: 100%;
+    height: auto;
+}
+
+.header-nav a{
+    padding: 0 10px;
+    color: inherit;
+ }
+
+
+.main{
+    background-color:lightgrey;
+    overflow-wrap:break-word;
+}
+
+.footer{
+    background-color:grey;
+}
+p {
+    color: black;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+
+}

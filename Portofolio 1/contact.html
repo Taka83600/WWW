@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Aymen Ben Amor</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="bg-dark text-light">
+  <header class="container py-3">
+    <h1 class="text-center">Aymen Ben Amor</h1>
+    <p class="text-center fst-italic">Portfolio personnel</p>
+  </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <img src="images/logo ba.webp" alt="Logo" class="logo-rotate" />
+        <a class="navbar-brand" href="#">Mon Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/Portofolio 1/index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Portofolio 1/apropos.html">À propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Portofolio 1/projets.html">Projets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/Portofolio 1/Architecture.html"
+                >Architecture</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Portofolio 1/Voyages.html"
+                >Voyages</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Portofolio 1/Volcanisme.html"
+                >Volcanisme</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Portofolio 1/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+  <div class="contact-section">
+    <!-- Bloc gauche : Formulaire -->
+    <div class="contact-page">
+      <h1 class="contact-title text-danger">Contacter moi</h1>
+
+      <form class="contact-form" action="#" method="post">
+        <div class="form-group">
+          <label class="form-label" for="name">Nom</label>
+          <input class="form-input" type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">E-mail</label>
+          <input class="form-input" type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="message">Message</label>
+          <textarea class="form-textarea" id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <button class="form-button text-light" type="submit">Envoyer</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Bloc droite : CV -->
+    <div class="cv-box">
+      <h2 class="cv-title">Mon CV</h2>
+      <div class="cv-buttons">
+        <a class="cv-view-button" href="/Portofolio 1/assets/CV professionnel Aymen Ben Amor 2025.pdf" target="CV">📄 Voir le CV</a>
+        <a class="cv-download-button" href="/Portofolio 1/assets/CV professionnel Aymen Ben Amor 2025.pdf" download>Télécharger le CV</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-danger text-center py-3">
+    <small>&copy; 2025 Aymen Ben Amor - Tous droits réservés</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
